@@ -1,8 +1,5 @@
 """ เทสทั้งหมด """
 import random
-# import pandas as pd
-# from googletrans import Tranlator
-
 def changelang(lang, word):
     """ เทียบภาษากัน """
     if lang == 'THAI':
