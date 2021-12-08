@@ -1,5 +1,7 @@
 """Check TH or ENG"""
 import random
+
+
 def trans(cate, words):
     if cate == 'THAI':
         transs = {'ๅ':'1', '/':'2', '-':'3', 'ภ':'4', 'ถ':'5', 'ุ':'6', 'ึ':'7', 'ค':'8', 'ต':'9', 'จ':'0', 'ข':'-', 'ช':'=',\
@@ -19,6 +21,8 @@ def trans(cate, words):
             'O':'ฯ', 'P':'ญ', '{':'ฐ', '}':',', '|':'ฅ', 'A':'ฤ', 'S':'ฆ', 'D':'ฏ', 'F':'โ', 'G':'ฌ', 'H':'็', 'J':'๋', 'K':'ษ', 'L':'ศ', \
             ':':'ซ', '"':'.', 'Z':'(', 'X':')', 'C':'ฉ', 'V':'ฮ', 'B':'ฺ', 'N':'์', 'M':'?', '<':'ฒ', '>':'ฬ', '?':'ฦ', '~':'%', '`':'_'}
     return transs[words]
+
+
 def translazymain(message):
     """Check if English or Thai"""
     alphabet_eng = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l',\
