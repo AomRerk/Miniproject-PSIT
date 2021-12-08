@@ -19,7 +19,7 @@ def trans(cate, words):
             'O':'ฯ', 'P':'ญ', '{':'ฐ', '}':',', '|':'ฅ', 'A':'ฤ', 'S':'ฆ', 'D':'ฏ', 'F':'โ', 'G':'ฌ', 'H':'็', 'J':'๋', 'K':'ษ', 'L':'ศ', \
             ':':'ซ', '"':'.', 'Z':'(', 'X':')', 'C':'ฉ', 'V':'ฮ', 'B':'ฺ', 'N':'์', 'M':'?', '<':'ฒ', '>':'ฬ', '?':'ฦ', '~':'%', '`':'_'}
     return transs[words]
-def main():
+def translazy_main():
     """Check if English or Thai"""
     alphabet_eng = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l',\
          'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',\
@@ -58,7 +58,6 @@ def main():
         elif i in alphabet_thai:
             cate = trans('THAI', i)
         elif i == ' ':
-            print(" ", end="")
+            cate = ' '
             continue
-        print(cate, end="")
-main()
+        return cate
